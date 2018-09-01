@@ -88,10 +88,34 @@ pdflatex latex.txt
 \item Ao escrever um parágrafo um ponto importante é a considerado de que parágrafos separados devem ter uma linha de espaçamento para que o programa consiga renderizar o arquivo como parágrafos separados. Oetiker\cite{TesteDeCitacao}
 \end{itemize}
 
+\section{Orientação Básica para se criar uma bibliografia \cite{ShareLatex}}
+\begin{spverbatim}
+Para se criar uma bibliografia básica devemos iniciar pela criação de um ambiente de criação de bibliografia
+\begin{theblibliography}{99}% A terminologia apresentada nas chaves em separado especifica a quantidade de itens que serão inseridos na bibliografia. É importante que esteja especificado para que apareçam os números correpondentes antes da referencia.
+O próximo passo para se criar uma citação de maneira eviciente é estabelecer o indexador para que possamos realizar a citação da referencia ao longo do texto utilizando o comando "\cite{indexador}". Essa ação pode ser realizada utilizando-se o seguinte comando:
+\bibitem{indexador}
+Autor do trabalho
+%Título do Trabalho
+\textit{Coyote behavior: Implications for manegement}
+%Data da publicação
+(1976).
+
+Depois que realizamos todas as citações Fechamos o ambiente que gera a citação bibliográfica utilizando o seguinte termo:
+\end{thebibliography}
+
+\end{spverbatim}
+
 %Bibliografia
 \begin{thebibliography}{99}
-\bibitem{TesteDeCitacao} Oetiker:
-\emph{The Not So Short Introduction to \TeX},(2018)
+\bibitem{TesteDeCitacao} 
+Oetiker:
+\textit{The Not So Short Introduction to \TeX},(2018)
+
+\bibitem{ShareLatex}
+ShareLatex
+\textit{Bibliography management with bibtex}
+(2018). Website:https://www.sharelatex.com/learn/Bibliography_management_with_bibtex
+
 \end{thebibliography}
 
 \end{document}
